@@ -78,10 +78,8 @@ def make_predictions(test_data_path, optimized_weights, num_features):
 
 if __name__ == "__main__":
     # noinspection PyTypeChecker
-    parser = argparse.ArgumentParser(description="Homework 1",
-                                     epilog="CSCI 4360/6360 Data Science II: Fall 2023",
-                                     add_help="How to use",
-                                     prog="python homework1.py [train-data] [train-label] [test-data]")
+    parser = argparse.ArgumentParser(add_help="How to use",
+                                     prog="python logreg.py [train-data] [train-label] [test-data]")
     parser.add_argument("paths", nargs=3)
     args = vars(parser.parse_args())
 
